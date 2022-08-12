@@ -51,6 +51,8 @@ semilogx(10.^ansDkx,f(ansDkx),'*');
 hold off;
 xlabel("压力P")
 ylabel("孔隙比e")
+pointMsg = sprintf("(%.2f,%.2f)",10.^ansDkx,f(ansDkx));
+text(10.^ansDkx,f(ansDkx),pointMsg,'EdgeColor','red');
 
 % 做图 lg图
 figure;
@@ -62,4 +64,5 @@ plot(ansDkx,f(ansDkx),'*');
 hold off;
 xlabel("压力 lg(P)")
 ylabel("孔隙比e")
-
+pointMsg = sprintf("(%.2f,%.2f)",ansDkx,f(ansDkx));
+text(ansDkx,f(ansDkx),pointMsg,'EdgeColor','red');
