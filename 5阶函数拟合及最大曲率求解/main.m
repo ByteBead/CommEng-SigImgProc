@@ -43,20 +43,25 @@ fprintf("压力为P=%.2f时 孔隙比e=%.2f 曲率最大\n",10^ansDkx,f(ansDkx))
 
 % 做图 对数图
 figure;
+% 坐标轴 x轴
 lineIndex = 1:0.01:3.8;
+% 拟合的曲线
 semilogx(10.^lineIndex, f(lineIndex))
 hold on;
+% 原始数据
 semilogx(10.^lgP, e,'.')
+% 曲率最大的点
 semilogx(10.^ansDkx,f(ansDkx),'*');
 hold off;
 xlabel("压力P")
 ylabel("孔隙比e")
-pointMsg = sprintf("(%.2f,%.2f)",10.^ansDkx,f(ansDkx));
-text(10.^ansDkx,f(ansDkx),pointMsg,'EdgeColor','red');
+pointMsg = sprintf("    (%.2f,%.2f)",10.^ansDkx,f(ansDkx));
+text(10.^ansDkx,f(ansDkx),pointMsg);
 
 % 做图 lg图
 figure;
 hold on;
+% 坐标轴 x轴
 lineIndex = 1:0.01:3.8;
 plot(lineIndex, f(lineIndex))
 plot(lgP, e,'.')
@@ -64,5 +69,5 @@ plot(ansDkx,f(ansDkx),'*');
 hold off;
 xlabel("压力 lg(P)")
 ylabel("孔隙比e")
-pointMsg = sprintf("(%.2f,%.2f)",ansDkx,f(ansDkx));
-text(ansDkx,f(ansDkx),pointMsg,'EdgeColor','red');
+pointMsg = sprintf("    (%.2f,%.2f)",ansDkx,f(ansDkx));
+text(ansDkx,f(ansDkx),pointMsg);
