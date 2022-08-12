@@ -25,26 +25,34 @@ df(x) = diff(f(x),1);
 d2f(x) = diff(f(x),2);
 % 曲率
 k(x) = abs(d2f(x))/((1+df(x)^2)^(3/2));
-maxK_k = 0;
-maxK_lgP = 0;
-for indexlgP = log10(10):0.001:log10(3200)
-   if k(indexlgP)>maxK_k
-        maxK_lgP = indexlgP;
-        maxK_k = k(indexlgP);
-   end
+dk(x) = diff(k(x));
+dkxs = double(solve(dk));
+ansDkx = 0;
+ansMax = 0;
+for index = 1:length(dkxs)
+    fprintf("极值点 P=%.2f k=%.2f\n",10^dkxs(index,1),dk(dkxs(index,1)))
+    if ansMax<dk(dkxs(index,1))
+        ansMax=dk(dkxs(index,1));
+        ansDkx=dkxs(index);
+    end
 end
-fprintf("压力为P=%.2f时 孔隙比e=%.2f 曲率最大\n",10^maxK_lgP,maxK_k)
+fprintf("压力为P=%.2f时 孔隙比e=%.2f 曲率最大\n",10^ansDkx,f(ansDkx))
 figure;
 hold on;
-semilogy(P, e)
-semilogy(10^maxK_lgP,f(maxK_lgP),'*');
-hold off;
-xlabel("压力P")
-ylabel("孔隙比e")
-figure;
-hold on;
-plot(lgP, e)
-plot(maxK_lgP,f(maxK_lgP),'*');
+lineIndex = 1:0.01:3.8;
+plot(lineIndex, f(lineIndex))
+plot(lgP, e,'.')
+plot(ansDkx,f(ansDkx),'*');
 hold off;
 xlabel("压力 lg(P)")
+ylabel("孔隙比e")
+
+figure;
+hold on;
+lineIndex = 1:0.01:3.8;
+semilogx(10.^lineIndex, f(lineIndex))
+plot(10.^lgP, e,'.')
+plot(10.^ansDkx,f(ansDkx),'*');
+hold off;
+xlabel("压力P")
 ylabel("孔隙比e")
