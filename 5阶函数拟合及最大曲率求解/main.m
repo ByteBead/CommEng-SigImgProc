@@ -24,22 +24,32 @@ df(x) = diff(f(x),1);
 % 二阶求导
 d2f(x) = diff(f(x),2);
 % 曲率
-k(x) = abs(d2f(x))/((1+df(x)^2)^(3/2));
+k(x) = d2f(x)/((1+df(x)^2)^(3/2));
 % 曲率一阶导数
 dk(x) = diff(k(x));
+figure;
+subplot(1,2,1)
+fplot(k,[1,3.8])
+xlabel("压力 lg(P)")
+ylabel("曲率")
+subplot(1,2,2)
+fplot(dk,[1,3.8])
+xlabel("压力 lg(P)")
+ylabel("曲率导数")
 % 求曲率的极值点
 dkxs = double(solve(dk));
 ansDkx = 0;
-% 求曲率的最大值点
-ansMax = 0;
-for index = 1:length(dkxs)
-    fprintf("极值点 P=%.2f k=%.2f\n",10^dkxs(index,1),dk(dkxs(index,1)))
-    if ansMax<dk(dkxs(index,1))
-        ansMax=dk(dkxs(index,1));
+% 求负曲率的最大值点
+ansMin = inf;
+for index = 1:length(dkxs)-1
+    thisX = real(dkxs(index,1));
+    fprintf("极值点 lg(P)=%.2f k=%.2f\n",thisX,k(thisX))
+    if ansMin>k(thisX)
+        ansMin=k(thisX);
         ansDkx=dkxs(index);
     end
 end
-fprintf("压力为P=%.2f时 孔隙比e=%.2f 曲率最大\n",10^ansDkx,f(ansDkx))
+fprintf("压力为lg(P)=%.2f时 孔隙比e=%.2f 曲率最大\n",ansDkx,f(ansDkx))
 
 % 做图 对数图
 figure;
