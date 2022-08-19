@@ -1,6 +1,10 @@
 ## GCC支持Host发起的时区同步
 
-### 1.文件描述
+### 1.目标
+
+![目标描述](https://raw.githubusercontent.com/ComTechCo/dailyWork/master/GCC支持Host发起的时区同步/Req.JPG)
+
+### 2.文件描述
 
 ​	/Program/CCBConfiguration.xml是配置文件
 
@@ -13,7 +17,7 @@
 
 + 注意 如果电脑没有安装Plink，请将Plink文件夹添加到环境变量
 
-### 2.使用方法
+### 3.使用方法
 
 ​	在HOST的dos指令框中输入 以下指令
 
