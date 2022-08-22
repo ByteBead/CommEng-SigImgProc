@@ -1,10 +1,11 @@
 from __future__ import division
+import zoneChange
 import sys
 import time
 import os
-import glob
-import string
 import xml.dom.minidom as minidom
+import win32api
+import win32security
 
 REMOTE_TARGET_USER = ''
 REMOTE_TARGET_PWD = ''
@@ -74,6 +75,27 @@ def change_time_zone(path):
     existStr = os.popen(cmd)
 
 
+
+# 显示当前时区
+print(win32api.GetTimeZoneInformation())
+# 索取管理员权限
+zoneChange.AdjustPrivilege(win32security.SE_TIME_ZONE_NAME)
+# 设置windows时区样例复制(x,(......))的(....)部分
+# (2, (180, '格陵兰标准时间', (0, 10, 6, 5, 23, 0, 0, 0), 0, '格陵兰夏令时', (0, 3, 6, 5, 22, 0, 0, 0), -60))
+# (0, (180, '格陵兰标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0, '格陵兰标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0))
+# (2, (210, '纽芬兰标准时间', (0, 11, 0, 1, 2, 0, 0, 0), 0, '纽芬兰夏令时', (0, 3, 0, 2, 2, 0, 0, 0), -60))
+# (0, (210, '纽芬兰标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0, '纽芬兰标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0))
+# (2, (360, '中部标准时间', (0, 11, 0, 1, 2, 0, 0, 0), 0, '中部夏令时', (0, 3, 0, 2, 2, 0, 0, 0), -60))
+# (2, (540, '阿拉斯加标准时间', (0, 11, 0, 1, 2, 0, 0, 0), 0, '阿拉斯加夏令时', (0, 3, 0, 2, 2, 0, 0, 0), -60))
+# (0, (720, '国际日期变更线标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0, '国际日期变更线夏令时', (0, 0, 0, 0, 0, 0, 0, 0), 0))
+# (0, (-180, '俄罗斯 TZ 2 标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0, '俄罗斯 TZ 2 夏令时', (0, 0, 0, 0, 0, 0, 0, 0), -60))
+# (0, (-330, '印度标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0, '印度夏令时', (0, 0, 0, 0, 0, 0, 0, 0), 0))
+# (0, (-540, '东京标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0, '东京夏令时', (0, 0, 0, 0, 0, 0, 0, 0), 0))
+# (1, (-720, '斐济标准时间', (0, 1, 6, 1, 0, 0, 0, 0), 0, '斐济夏令时', (0, 11, 0, 2, 2, 0, 0, 0), -60))
+# 显示更改后的时区
+win32api.SetTimeZoneInformation(
+    (-480, '中国标准时间', (0, 0, 0, 0, 0, 0, 0, 0), 0, '中国夏令时', (0, 0, 0, 0, 0, 0, 0, 0), 0))
+print(win32api.GetTimeZoneInformation())
 read_configxml('CCBConfiguration.xml')
 offset_second = time.timezone
 offset_hour = divmod(offset_second, 3600)
