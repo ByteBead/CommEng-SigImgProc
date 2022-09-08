@@ -1,0 +1,8 @@
+<Document>
+<LoginUser>king</LoginUser>
+<Password>king</Password>
+<HostName>192.168.1.111</HostName>
+<UploadPath>pass</UploadPath>
+<InstallParameter>pass</InstallParameter>
+<InstallLogPath>pass</InstallLogPath>
+</Document>
