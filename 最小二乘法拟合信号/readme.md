@@ -70,9 +70,10 @@ formatSpec = '二次谐波频率%.2f(Hz) 相角(弧度)%.2f 幅值%.4f\n';
 fprintf(formatSpec,w1*2/(2*pi),deg2,p2);
 ```
 
+## 结果如下
 
+![Screenshot-2022-10-04 21.18.14](https://nas.comtech.work:5541/2022/10/04_Screenshot-2022-10-04%2021.18.14.png)
 
+## 参考文献截图
 
-
-
-
+![readMe](https://nas.comtech.work:5541/2022/10/04_readMe.JPG)

@@ -2,7 +2,7 @@
 
 ### 1.目标
 
-![目标描述](https://raw.githubusercontent.com/ComTechCo/dailyWork/master/GCC支持Host发起的时区同步/Req.JPG)
+![Screenshot-2022-10-04 21.21.43](https://nas.comtech.work:5541/2022/10/04_Screenshot-2022-10-04%2021.21.43.png)
 
 ### 2.文件描述
 
