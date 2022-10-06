@@ -1,4 +1,4 @@
-# Matlab利用元组特性处理Excel字符数据
+# Matlab数据处理
 
 ## 0 要求
 
@@ -6,7 +6,11 @@
 
 ![60ACA77D8CD4C10449FE92A25002E25C](https://nas.comtech.work:5541/2022/10/03_60ACA77D8CD4C10449FE92A25002E25C.jpg)
 
-其中，每个订单一行，每个商品1列。
+其中，每个订单1行，每个商品1列。
+
+数据格式类似：
+
+![Screenshot-2022-10-06 20.58.54](https://nas.comtech.work:5541/2022/10/06_Screenshot-2022-10-06%2020.58.54.png)
 
 ## 1.思路
 
