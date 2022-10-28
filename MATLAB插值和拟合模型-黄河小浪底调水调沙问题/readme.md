@@ -49,7 +49,7 @@ sandOut=quadl(@(tt)fnval(sandRe,tt),3600*24*11,endTime);
 fprintf("第%d天0:00-20:00排沙量%.0fm3\n",12,sandOut);
 ```
 
-结果如下![Q1](https://nas.comtech.work:5541/2022/09/22_Q1.jpg)
+结果如下![Q1](https://nas.itrefer.com:5541/2022/09/22_Q1.jpg)
 
 ```
 总排沙量184398480000m3
@@ -124,15 +124,15 @@ fprintf("水流量为时%d，估计排沙量%.0f\n",in,ansIn)
 
 一次多项式拟合
 
-![fit1](https://nas.comtech.work:5541/2022/09/22_fit1.png)
+![fit1](https://nas.itrefer.com:5541/2022/09/22_fit1.png)
 
 二次多项式拟合
 
-![fit2](https://nas.comtech.work:5541/2022/09/22_fit2.png)
+![fit2](https://nas.itrefer.com:5541/2022/09/22_fit2.png)
 
 四次多项式拟合
 
-![fit4](https://nas.comtech.work:5541/2022/09/22_fit4.png)
+![fit4](https://nas.itrefer.com:5541/2022/09/22_fit4.png)
 
 结论如下：
 
@@ -142,4 +142,4 @@ fprintf("水流量为时%d，估计排沙量%.0f\n",in,ansIn)
 
 拟合曲线图如下。
 
-![Q2](https://nas.comtech.work:5541/2022/09/22_Q2.jpg)
+![Q2](https://nas.itrefer.com:5541/2022/09/22_Q2.jpg)

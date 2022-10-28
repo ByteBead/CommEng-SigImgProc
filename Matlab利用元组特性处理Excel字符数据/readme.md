@@ -4,13 +4,13 @@
 
 需要将订单号和商品编号数字化，成一个矩阵，类似下图所示。
 
-![60ACA77D8CD4C10449FE92A25002E25C](https://nas.comtech.work:5541/2022/10/03_60ACA77D8CD4C10449FE92A25002E25C.jpg)
+![60ACA77D8CD4C10449FE92A25002E25C](https://nas.itrefer.com:5541/2022/10/03_60ACA77D8CD4C10449FE92A25002E25C.jpg)
 
 其中，每个订单1行，每个商品1列。
 
 数据格式类似：
 
-![Screenshot-2022-10-06 20.58.54](https://nas.comtech.work:5541/2022/10/06_Screenshot-2022-10-06%2020.58.54.png)
+![Screenshot-2022-10-06 20.58.54](https://nas.itrefer.com:5541/2022/10/06_Screenshot-2022-10-06%2020.58.54.png)
 
 ## 1.思路
 
@@ -84,11 +84,11 @@ fprintf("处理了数据%d条 订单共%d个 商品共%d个\n",tempMaxIndex,ordI
 
 前10000条数据运行结果如下
 
-![Re-Screenshot-2022-10-03 20.13.20](https://nas.comtech.work:5541/2022/10/03_Re-Screenshot-2022-10-03%2020.13.20.png)
+![Re-Screenshot-2022-10-03 20.13.20](https://nas.itrefer.com:5541/2022/10/03_Re-Screenshot-2022-10-03%2020.13.20.png)
 
 系统资源占用如下
 
-![Screenshot-2022-10-03 20.08.21](https://nas.comtech.work:5541/2022/10/03_Screenshot-2022-10-03%2020.08.21.png)
+![Screenshot-2022-10-03 20.08.21](https://nas.itrefer.com:5541/2022/10/03_Screenshot-2022-10-03%2020.08.21.png)
 
 ## 4.开发心得
 
