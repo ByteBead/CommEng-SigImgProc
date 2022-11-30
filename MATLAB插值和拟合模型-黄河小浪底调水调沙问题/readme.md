@@ -49,7 +49,7 @@ sandOut=quadl(@(tt)fnval(sandRe,tt),3600*24*11,endTime);
 fprintf("第%d天0:00-20:00排沙量%.0fm3\n",12,sandOut);
 ```
 
-结果如下<img src="https://nas.itrefer.com:5541/2022/09/22_Q1.jpg" alt="调沙问题-观测数据" style="zoom:67%;" />
+结果如下<img src="https://www.itrefer.com/pictureBed/2022/09/22_Q1.jpg" alt="调沙问题-观测数据" style="zoom:67%;" />
 
 ```
 总排沙量184398480000m3
@@ -124,15 +124,15 @@ fprintf("水流量为时%d，估计排沙量%.0f\n",in,ansIn)
 
 一次多项式拟合
 
-<img src="https://nas.itrefer.com:5541/2022/09/22_fit1.png" alt="调沙观测数据-一次多项式拟合" style="zoom:50%;" />
+<img src="https://www.itrefer.com/pictureBed/2022/09/22_fit1.png" alt="调沙观测数据-一次多项式拟合" style="zoom:50%;" />
 
 二次多项式拟合
 
-<img src="https://nas.itrefer.com:5541/2022/09/22_fit2.png" alt="调沙观测数据-二次多项式拟合" style="zoom:50%;" />
+<img src="https://www.itrefer.com/pictureBed/2022/09/22_fit2.png" alt="调沙观测数据-二次多项式拟合" style="zoom:50%;" />
 
 四次多项式拟合
 
-<img src="https://nas.itrefer.com:5541/2022/09/22_fit4.png" alt="调沙观测数据-四次多项式拟合" style="zoom:50%;" />
+<img src="https://www.itrefer.com/pictureBed/2022/09/22_fit4.png" alt="调沙观测数据-四次多项式拟合" style="zoom:50%;" />
 
 结论如下：
 
@@ -142,4 +142,4 @@ fprintf("水流量为时%d，估计排沙量%.0f\n",in,ansIn)
 
 拟合曲线图如下。
 
-<img src="https://nas.itrefer.com:5541/2022/09/22_Q2.jpg" alt="调沙观测数据-拟合曲线图" style="zoom:150%;" />
+![调沙观测数据-拟合曲线图](https://www.itrefer.com/pictureBed/2022/09/22_Q2.jpg)

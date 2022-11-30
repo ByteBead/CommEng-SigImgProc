@@ -2,7 +2,7 @@
 
 ### 1.目标
 
-![Screenshot-2022-10-04 21.21.43](https://nas.itrefer.com:5541/2022/10/04_Screenshot-2022-10-04%2021.21.43.png)
+![Screenshot-2022-10-04 21.21.43](https://www.itrefer.com/pictureBed/2022/10/04_Screenshot-2022-10-04%2021.21.43.png)
 
 ### 2.文件描述
 

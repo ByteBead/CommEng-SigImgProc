@@ -1,6 +1,6 @@
 Sentinel-5P是欧空局于2017年10月13日发射的一颗全球大气污染监测卫星。卫星搭载了对流层观测仪（Tropospheric Monitoring Instrument，TROPOMI），可以有效的观测全球各地大气中痕量气体组分，包括NO2、O3、SO2、 HCHO、CH4和CO等重要的与人类活动密切相关的指标，加强了对气溶胶和云的观测。
 
-<img src="https://nas.itrefer.com:5541/2022/11/25_Screenshot-2022-11-25%2011.09.58.png" alt="Sentinel-5P" style="zoom:100%;" />
+<img src="https://www.itrefer.com/pictureBed/2022/11/25_Screenshot-2022-11-25%2011.09.58.png" alt="Sentinel-5P" style="zoom:100%;" />
 
 ## 项目简介
 

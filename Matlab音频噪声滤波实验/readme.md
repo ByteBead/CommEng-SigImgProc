@@ -81,9 +81,9 @@ end
 + Fs 为采样率
 + 单位 $π(rand/sample)$
 
-![IIR滤波器](https://nas.itrefer.com:5541/2022/11/16_image16685860313970.png)
+![IIR滤波器](https://www.itrefer.com/pictureBed/2022/11/16_image16685860313970.png)
 
-![FIR滤波器](https://nas.itrefer.com:5541/2022/11/16_image16685859896050.png)
+![FIR滤波器](https://www.itrefer.com/pictureBed/2022/11/16_image16685859896050.png)
 
 ```Matlab
 % 12kHz 低通IIR滤波器 16阶
@@ -140,8 +140,8 @@ function plotFFT(X,Fs,fftTitle)
 end
 ```
 
-![原始音频图](https://nas.itrefer.com:5541/2022/11/16_image16685864638160.png)
+![原始音频图](https://www.itrefer.com/pictureBed/2022/11/16_image16685864638160.png)
 
-![原始音频+多频率噪声图](https://nas.itrefer.com:5541/2022/11/16_image16685864422510.png)
+![原始音频+多频率噪声图](https://www.itrefer.com/pictureBed/2022/11/16_image16685864422510.png)
 
-![信号通过滤波器](https://nas.itrefer.com:5541/2022/11/16_image16685860872440.png)
+![信号通过滤波器](https://www.itrefer.com/pictureBed/2022/11/16_image16685860872440.png)

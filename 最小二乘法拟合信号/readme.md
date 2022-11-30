@@ -72,8 +72,8 @@ fprintf(formatSpec,w1*2/(2*pi),deg2,p2);
 
 ## 结果如下
 
-![Screenshot-2022-10-04 21.18.14](https://nas.itrefer.com:5541/2022/10/04_Screenshot-2022-10-04%2021.18.14.png)
+![Screenshot-2022-10-04 21.18.14](https://www.itrefer.com/pictureBed/2022/10/04_Screenshot-2022-10-04%2021.18.14.png)
 
 ## 参考文献截图
 
-![readMe](https://nas.itrefer.com:5541/2022/10/04_readMe.JPG)
+![readMe](https://www.itrefer.com/pictureBed/2022/10/04_readMe.JPG)

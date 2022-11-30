@@ -4,7 +4,7 @@
 
 ## 效果展示
 
-<img src="https://nas.itrefer.com:5541/2022/11/21_clip_image002.png" alt="Matlab实现比色分析法效果展示" style="zoom:150%;" />
+<img src="https://www.itrefer.com/pictureBed/2022/11/21_clip_image002.png" alt="Matlab实现比色分析法效果展示" style="zoom:150%;" />
 
 ## 核心方法
 
