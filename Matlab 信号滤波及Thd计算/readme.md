@@ -48,7 +48,7 @@ ylabel('单侧幅值频谱|P1(f)|')
 
 得到结果如下：
 
-<img src="https://www.itrefer.com/pictureBed/2022/09/13_%E8%BE%93%E5%85%A5%E4%BF%A1%E5%8F%B7%E7%9A%84%E9%A2%91%E8%B0%B1.jpg" alt="输入信号的频谱" style="zoom:50%;" />
+<img src="https://pic.itrefer.com/2022/09/13_%E8%BE%93%E5%85%A5%E4%BF%A1%E5%8F%B7%E7%9A%84%E9%A2%91%E8%B0%B1.jpg" alt="输入信号的频谱" style="zoom:50%;" />
 
 ## 3 选择合适的滤波器
 
@@ -75,13 +75,13 @@ dataOut = filtfilt(lowpassfirFilter,data);
 
 生成滤波器的幅频响应和相频响应图如下：
 
-![滤波器](https://www.itrefer.com/pictureBed/2022/09/13_%E6%BB%A4%E6%B3%A2%E5%99%A8.png)
+![滤波器](https://pic.itrefer.com/2022/09/13_%E6%BB%A4%E6%B3%A2%E5%99%A8.png)
 
 ## 4. 绘制输出信号的频谱
 
 做图方式同步骤2，得到滤波后信号频谱如下，不难发现19及更高次谐波已被过滤。
 
-<img src="https://www.itrefer.com/pictureBed/2022/09/13_%E8%BE%93%E5%87%BA%E4%BF%A1%E5%8F%B7%E7%9A%84%E9%A2%91%E8%B0%B1.jpg" alt="输出信号的频谱" style="zoom:50%;" />
+<img src="https://pic.itrefer.com/2022/09/13_%E8%BE%93%E5%87%BA%E4%BF%A1%E5%8F%B7%E7%9A%84%E9%A2%91%E8%B0%B1.jpg" alt="输出信号的频谱" style="zoom:50%;" />
 
 对应以下程序，为了方便对比，将滤波前函数的频谱和滤波后的频谱进行对比。
 
@@ -106,13 +106,13 @@ xlabel('f (Hz)')
 ylabel('单侧幅值频谱|P1(f)|'
 ```
 
-![滤波效果对比](https://www.itrefer.com/pictureBed/2022/09/13_%E6%BB%A4%E6%B3%A2%E6%95%88%E6%9E%9C%E5%AF%B9%E6%AF%94.jpg)
+![滤波效果对比](https://pic.itrefer.com/2022/09/13_%E6%BB%A4%E6%B3%A2%E6%95%88%E6%9E%9C%E5%AF%B9%E6%AF%94.jpg)
 
 ## 5. 用 MATLAB 语言编写一个函数来计算电压的 THD的函数
 
 为了确保自己编写的thd函数的正确性，首先使用Matlab的函数thd求解。
 
-![matlab提供的函数返回结果](https://www.itrefer.com/pictureBed/2022/09/13_matlab%E6%8F%90%E4%BE%9B%E7%9A%84%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C.jpg)
+![matlab提供的函数返回结果](https://pic.itrefer.com/2022/09/13_matlab%E6%8F%90%E4%BE%9B%E7%9A%84%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C.jpg)
 
 接着介绍如何自己实现thd函数。
 
@@ -152,7 +152,7 @@ legend("移动平均值滤波+去除直流后的信号","原始信号")
 hold off;
 ````
 
-![信号处理前后对比](https://www.itrefer.com/pictureBed/2022/09/13_%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%89%8D%E5%90%8E%E5%AF%B9%E6%AF%94.jpg)
+![信号处理前后对比](https://pic.itrefer.com/2022/09/13_%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%89%8D%E5%90%8E%E5%AF%B9%E6%AF%94.jpg)
 
 使用分段求频谱再平均的方法优化thd的计算。将输入信号按时间分为10组，求出各组信号的fft结果，并取平均值，最后根据公式计算thd值。
 
